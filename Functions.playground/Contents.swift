@@ -43,3 +43,29 @@ func getAgeAndCongratulate(name: String) -> Int {
 
 let friend2 = "Pete"
 var friend2Age = getAgeAndCongratulate(friend2)
+
+
+// Practice
+
+func doubleThat(num: Int) ->Int {
+    let twice = num*2
+    print("Double \(num) is \(twice), duh?!")
+    return twice
+}
+
+var someNum = 6
+var anotherNum = 41
+
+doubleThat(someNum)
+
+doubleThat(doubleThat(someNum))
+
+func halfThat(num: Int) -> Int {
+    let half = num/2
+    print("Half \(num) is \(half), nahmeen")
+    return half
+}
+
+halfThat(someNum)
+
+doubleThat(halfThat(someNum*5))
